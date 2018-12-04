@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://127.0.0.1:1433; DatabaseName=wxj_test
+    username: sa
+    password: 123456
+  jpa:
+    database: sql_server
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: none
+    show-sql: false
+    # stripped before adding them to the entity manager)
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
